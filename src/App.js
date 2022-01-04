@@ -6,22 +6,26 @@ import Banner from "./components/Banner";
 import PostsHead from "./components/PostsHead";
 import Post from "./components/Post";
 import SideNav from "./components/SideNav";
+import SignUpModal from "./components/SignUpModal";
+
+import { useState } from "react";
 function App() {
+  const [show, handleShow] = useState(false);
   return (
     <div className="App">
-      <NavigationBar />
+      <NavigationBar openModal={handleShow} />
       <Banner />
       <Container fluid style={{ backgroundColor: "white" }}>
         <PostsHead />
-        <Container>
+        <Container fluid>
           <Col>
-            <Row>
+            <Row style={{ marginTop: 15 }}>
               <Post />
             </Row>
-            <Row>
+            <Row style={{ marginTop: 15 }}>
               <Post />
             </Row>
-            <Row>
+            <Row style={{ marginTop: 15 }}>
               <Post />
             </Row>
           </Col>
@@ -30,6 +34,7 @@ function App() {
           </Col>
         </Container>
       </Container>
+      <SignUpModal show={show} onHide={() => handleShow(false)} />
     </div>
   );
 }

@@ -9,9 +9,9 @@ const PostsHead = () => {
     >
       <Tab eventKey="home" title="All Posts"></Tab>
       <Tab eventKey="profile" title="Article"></Tab>
-      <Tab eventKey="contact" title="Event"></Tab>
-      <Tab eventKey="contact" title="Education"></Tab>
-      <Tab eventKey="contact" title="Jobs"></Tab>
+      <Tab eventKey="event" title="Event"></Tab>
+      <Tab eventKey="education" title="Education"></Tab>
+      <Tab eventKey="jobs" title="Jobs"></Tab>
     </Tabs>
   );
 };

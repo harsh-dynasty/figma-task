@@ -22,15 +22,15 @@ const Post = () => {
           alt="React Bootstrap logo"
         />
       </Row>
-      <Row>
+      <Row style={{ padding: 5 }}>
         <h5 style={{ margin: 5 }}>✍️Article</h5>
       </Row>
-      <Row>
+      <Row style={{ padding: 5 }}>
         <h4>
           Tax benefits for investors under trade and Various organisations...
         </h4>
       </Row>
-      <Row>
+      <Row style={{ padding: 5 }}>
         <p style={{ color: "grey", fontSize: 20 }}>
           I’ve worked in UX for the better part of a decade. From now on, I plan
           to rei…
